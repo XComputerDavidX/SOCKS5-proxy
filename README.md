@@ -17,17 +17,19 @@ In terminal
 `pbcopy < ~/.ssh/your_file_name.pub`
 
 In your Google Cloud Console, search SSH Keys
-![Screenshot 2025-04-05 at 02 31 42](https://github.com/user-attachments/assets/7fc4d983-0bc2-4959-9e46-f10a6265062a)
 
 Click on edit
 
-![Screenshot 2025-04-05 at 02 32 49](https://github.com/user-attachments/assets/7da1001a-4276-4e46-92a4-3d6cf4a8f127)
+![Screenshot 2025-04-05 at 02 43 41](https://github.com/user-attachments/assets/c2341f82-873d-4f28-9080-b9752536e6e2)
+
 
 Add item, and paste in the private key
 
 Go to your Google Cloud Console-Compute Engine-VM Instances
+
 Copy the External IP
-![Screenshot 2025-04-05 at 02 25 00](https://github.com/user-attachments/assets/5342f19c-35f1-4d94-9b8d-fe86ce607572)
+
+![Screenshot 2025-04-05 at 02 43 32](https://github.com/user-attachments/assets/c922cbc9-17ad-4d6b-8cb0-cd0c19f73e5a)
 
 In your terminal try
 
@@ -36,3 +38,17 @@ In your terminal try
 Then try 
 
 `ssh -i ~/.ssh/your_file_name username@External_IP -p 7000`
+
+If you can SSH into your server, continue
+
+If you encounter Prermission Denied. Use the built-in SSH feature in your VM Instances
+
+Do
+
+`nano ~/.ssh/authorized_keys`
+
+Now go to your Mac terminal and do 
+
+`pbcopy < ~/.ssh/your_file_name.pub`
+
+Start a new line and paste in your Private SSH Key from your Mac to authorized keys in the server
