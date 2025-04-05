@@ -23,7 +23,7 @@ Click on edit
 ![Screenshot 2025-04-05 at 02 43 41](https://github.com/user-attachments/assets/c2341f82-873d-4f28-9080-b9752536e6e2)
 
 
-Add item, and paste in the private key
+Add item, and paste in the private key and save
 
 Go to your Google Cloud Console-Compute Engine-VM Instances
 
@@ -52,3 +52,9 @@ Now go to your Mac terminal and do
 `pbcopy < ~/.ssh/your_file_name.pub`
 
 Start a new line and paste in your Private SSH Key from your Mac to authorized keys in the server
+
+To save the file, do : CTRL+X, Y, Enter
+
+In your server, run
+
+`sudo systemctl restart sshd`
