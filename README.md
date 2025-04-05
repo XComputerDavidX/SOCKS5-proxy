@@ -1,6 +1,4 @@
 # SOCKS5-proxy
-This script strictly follows the rule of school network and does not count as hacking, brute forcing, using bugs
-
 This proxy.sh allows you to connect to an external server eg. Google Cloud VM to bypass the IPS/School website restrictions
 
 You might encounter issue with Google Chrome on MacOS, as it doesn't obey the system proxy settings, this can be solved by installing extension "Proxy Switcher".
