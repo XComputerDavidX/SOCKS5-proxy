@@ -7,7 +7,7 @@ Make sure HTTP proxy is set to 127.0.0.1 and Port 1080
 
 Electron Apps might not respect system proxy, can be solved by using ClashX Pro, set mode as Global
 
-Demostrating with Google Cloud VM
+Demostrating with Google Cloud VM, server is running Ubuntu 24.04, commands may vary depending on your system version
 
 First create your private ssh key
 In terminal
