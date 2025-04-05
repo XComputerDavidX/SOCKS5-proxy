@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # === Config ===
-PUBLIC_IP="xxx.xxx.xxx.xxx"  # Your server public IP
+PUBLIC_IP="xxx.xxx.xxx.xxx"  # Your server public IP (Must change)
 SSH_PORT=7000
 LOCAL_SOCKS_PORT=1080
-SSH_USER="replace_with_username"     # Your SSH login username
-SSH_KEY="path/to/your/private/key"  # Path to your SSH key
+SSH_USER="replace_with_username"     # Your SSH login username (Must change)
+SSH_KEY="path/to/your/private/key"  # Path to your SSH key (Must change)
 LOG_FILE="$HOME/proxy.log"    # Log file path
 PID_FILE="$HOME/proxy.pid"     # PID file path
 
