@@ -58,3 +58,13 @@ To save the file, do : CTRL+X, Y, Enter
 In your server, run
 
 `sudo systemctl restart sshd`
+
+Again, in your terminal, try
+
+`ssh -i ~/.ssh/your_file_name username@External_IP`
+
+Also try
+
+`ssh -i ~/.ssh/your_file_name username@External_IP -p 7000`
+
+You should be able to login into your server using terminal
