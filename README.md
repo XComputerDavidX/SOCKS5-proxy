@@ -1,11 +1,29 @@
 # SOCKS5-proxy
 This proxy.sh allows you to connect to an external server eg. Google Cloud VM to bypass the IPS/School website restrictions
 
+======How to use=====
+
+`cd path/to/folder/that/contain/proxy.sh`
+
+Only do this once 
+
+`chmod +x proxy.sh`
+
+To start the script
+
+`./proxy.sh start`
+
+Remember to stop the script to prevent lag to system
+
+`./proxy.sh stop`
+
 You might encounter issue with Google Chrome on MacOS, as it doesn't obey the system proxy settings, this can be solved by installing extension "Proxy Switcher".
 Once started proxy.sh, open proxy-switcher and select manual
 Make sure HTTP proxy is set to 127.0.0.1 and Port 1080
 
 Electron Apps might not respect system proxy, can be solved by using ClashX Pro, set mode as Global
+
+=====Full tutorial=====
 
 Demostrating with Google Cloud VM, server is running Ubuntu 24.04, commands may vary depending on your system version
 
