@@ -9,12 +9,12 @@ SSH_KEY="path/to/your/private/key"  # Path to your SSH key (Must change)
 LOG_FILE="$HOME/proxy.log"    # Log file path
 PID_FILE="$HOME/proxy.pid"     # PID file path
 
-# === Function to Log Messages with Timestamps ===
+# Function to Log Messages with Timestamps
 log_message() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" | tee -a "$LOG_FILE"
 }
 
-# === Function to Start SSH SOCKS5 Proxy ===
+# Function to Start SSH SOCKS5 Proxy
 start_proxy() {
     log_message "[*] Starting SSH SOCKS5 proxy..."
     log_message "[*] Configuring proxy settings:"
@@ -45,7 +45,7 @@ start_proxy() {
     fi
 }
 
-# === Function to Check Connection Status ===
+# Function to Check Connection Status 
 check_connection() {
     # Check if the proxy is working with a specific website
     if curl -s --connect-timeout 2 --socks5 "127.0.0.1:$LOCAL_SOCKS_PORT" "http://api.ipify.org" > /dev/null; then
@@ -65,7 +65,7 @@ check_connection() {
     fi
 }
 
-# === Function to Stop SSH SOCKS5 Proxy ===
+# Function to Stop SSH SOCKS5 Proxy 
 stop_proxy() {
     if [ ! -f "$PID_FILE" ]; then
         log_message "[!] No SSH proxy is running (PID file does not exist)."
@@ -89,10 +89,10 @@ stop_proxy() {
     fi
 }
 
-# === Trap Ctrl+C to Stop Proxy ===
+# Trap Ctrl+C to Stop Proxy 
 trap stop_proxy SIGINT
 
-# === Main Logic ===
+# Main Logic 
 if [[ "$1" == "start" ]]; then
     start_proxy
 elif [[ "$1" == "stop" ]]; then
