@@ -64,27 +64,27 @@ If you can SSH into your server, continue
 If you encounter Prermission Denied. Use the built-in SSH feature in your VM Instances
 
 Do
-
-`nano ~/.ssh/authorized_keys`
-
+```sh
+nano ~/.ssh/authorized_keys
+```
 Now go to your Mac terminal and do 
-
-`pbcopy < ~/.ssh/your_file_name.pub`
-
+```sh
+pbcopy < ~/.ssh/your_file_name.pub
+```
 Start a new line and paste in your Private SSH Key from your Mac to authorized keys in the server
 
 To save the file, do : CTRL+X, Y, Enter
 
 In your server, run
-
-`sudo systemctl restart sshd`
-
+```sh
+sudo systemctl restart sshd
+```
 Again, in your terminal, try
-
-`ssh -i ~/.ssh/your_file_name username@External_IP`
-
+```sh
+ssh -i ~/.ssh/your_file_name username@External_IP
+```
 Also try
-
-`ssh -i ~/.ssh/your_file_name username@External_IP -p 7000`
-
+```sh
+ssh -i ~/.ssh/your_file_name username@External_IP -p 7000
+```
 You should be able to login into your server using terminal
