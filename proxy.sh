@@ -55,7 +55,7 @@ check_connection() {
         return
     fi
     
-    # Ping google.com to test connectivity
+    # Ping google.com to test connectivity, you can change to any other commonly used website
     PING_RESULT=$(ping -c 1 google.com)
     if [ $? -eq 0 ]; then
         log_message "[*] Ping to google.com succeeded:"
