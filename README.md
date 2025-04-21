@@ -28,7 +28,7 @@ Electron Apps might not respect system proxy, can be solved by using ClashX Pro,
 
 Demostrating with Google Cloud VM, server is running Ubuntu 24.04, commands may vary depending on your system version
 
-First create your private ssh key
+First create your private SSH key
 In terminal
 ```sh
 ssh-keygen -t rsa -b 4096 -C create_your_own_username -f ~/.ssh/create_your_own_file_name
