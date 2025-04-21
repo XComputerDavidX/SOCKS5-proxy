@@ -1,14 +1,15 @@
 # SOCKS5-proxy
 This proxy.sh allows you to connect to an external server eg. Google Cloud VM to bypass the IPS/School website restrictions
 
-#How to use#
+## How to use
 
-`cd path/to/folder/that/contain/proxy.sh`
-
+```sh
+cd path/to/folder/that/contain/proxy.sh
+```
 Only do this once 
-
-`chmod +x proxy.sh`
-
+```sh
+chmod +x proxy.sh
+```
 To start the script
 
 `./proxy.sh start`
