@@ -10,14 +10,14 @@ Only do this once
 ```sh
 chmod +x proxy.sh
 ```
-To start the script
-
-`./proxy.sh start`
-
+## To start the script
+```sh
+./proxy.sh start
+```
 Remember to stop the script to prevent lag to system
-
-`./proxy.sh stop`
-
+```sh
+./proxy.sh stop
+```
 You might encounter issue with Google Chrome on MacOS, as it doesn't obey the system proxy settings, this can be solved by installing extension "Proxy Switcher".
 Once started proxy.sh, open proxy-switcher and select manual
 Make sure HTTP proxy is set to 127.0.0.1 and Port 1080
